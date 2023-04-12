@@ -9,7 +9,7 @@ This shell script is designed to help developers working with MicroK8s on Window
 - Windows 10 with WSL2 installed
 - MicroK8s installed and running on WSL2
 - The `kubectl` command-line tool installed and configured to work with MicroK8s
-- Access to a terminal or command prompt with administrative privileges on the Windows host
+- Access to a terminal or command prompt and Power Shell with administrative privileges on the Windows host to run commands generated
 
 ## How the Script Works
 
@@ -28,9 +28,17 @@ When the parameter value is `remove`, the script generates a `route delete` comm
 5. To run the generated command on Windows with administrative privileges, open a PowerShell window as an administrator.
 6. Copy and paste the generated command into the PowerShell window and press Enter.
 7. To remove the route, repeat steps 4-6 with the parameter value `remove`.
-8. To check the active routes, run the following command in a PowerShell window with administrative privileges:
+8. To check the active routes, run the following command in a PowerShell window with administrative privileges: `route print`
 
 ## Conclusion
 
 This script can simplify the process of adding or removing a route on the Windows host that allows access to resources within a MicroK8s cluster, making it easier for developers to work with MicroK8s on Windows WSL2. By automating the process of generating the `route` or `route delete` command, the script reduces the risk of errors and ensures that the correct network information is used.
+
+## Contributing to this Material
+
+Your contributions and suggestions to this material are always welcome and highly appreciated! By sharing your knowledge and expertise, you can help others and make a positive impact on the development ecosystem.
+
+If you have any ideas or suggestions on how this material can be improved, feel free to open an issue or submit a pull request. Your contributions will help make this resource even more useful to the development community.
+
+So don't hesitate to get involved and help improve this resource for everyone!
 
